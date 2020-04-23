@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"Microsoft YaHei"
+}
+li {
+    list-style:none
+}
+a {
+    text-decoration:none;
+    color: aliceblue;
+}
+a:hover{
+    color: aqua;
+}
+
+#app {
+    overflow: hidden!important;
+    height: 100vh;
+}
+
+ .content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y;
+}
+
+
+#app .top nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.7);
+}
+#app .top nav ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#app .top nav ul li {
+    margin: 15px 20px;
+}
+
+/* 内容 */
+#app .content section {
+    display: flex;
+    /*换行*/
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: floralwhite;
+
+    scroll-snap-align: center;
+}
+#app .content section#home {
+    background: url("http://p2.qhimg.com/bdr/__85/t018af1961351b137ec.jpg") no-repeat center center/cover;
+}
+#app .content section#recommend {
+    background: url("http://p4.qhimg.com/bdr/__85/t01fe6dc25f3dd3d30d.jpg") no-repeat center center/cover;
+}
+
+#app .content section#ropular {
+    background: url("http://p0.qhimg.com/bdr/__85/t011b864f16749f9868.jpg") no-repeat center center/cover;
+}
+
+#app .content section#serve {
+    background: url("http://p4.qhimg.com/bdr/__85/t019a8699854767bd4a.jpg") no-repeat center center/cover;
+
+}
+
+.content section div h1 {
+    font-size: 3rem;
+    padding: 10px 0;
+}
+.content section div p {
+    font-size: 1.5rem;
+}
+
+
+section#serve div #id-h2 {
+    color: seagreen;
+    
+}

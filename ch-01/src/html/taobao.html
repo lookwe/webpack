@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo-bd {
+            width: 300px;
+            height: 0;
+            border: 1px solid#ccc;
+            display: block;
+            /* 取消下划线 或者添加上划线|删除线|闪烁*/
+            text-decoration: none; 
+            background: url(//img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png) 0 0 no-repeat;
+
+            /* 第一种方式 出来网站没有css 也能正常使用某些功能，使用：text-indent 缩进 */
+            /* text-indent: 330px;
+            white-space: nowrap;
+            overflow: hidden; */
+
+            /* 第二种处理方式 高级 使用padding-top 趁起高度，height为0：。为0后字体就会被溢出去，因为没有高度能容下字体 */
+            /* 高度注释了他不一定是没有高度了，他还有浏览器默认样式表，设置默认高度 */
+            padding-top: 62px;
+            overflow: hidden;
+
+        }
+
+        div {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. 下面是淘宝中的logo图标。淘宝是国际大网站，做的一些开发肯定都是很完善的。下面说一个，在网络很差，浏览器
+           没能及时加载css，js时候怎么确保网站还是可以正常使用呢，上面2中方式，国际公司处理兼容
+
+     -->
+    <a href="//www.taobao.com" role="img" class="logo-bd clearfix">淘宝网</a>
+
+    <!-- 
+
+        p标签不能包裹div，不然会被浏览器解析成2个p标签中间加一个div标签同级
+        行内元素只能包裹行内，a标签除外。因为不能2个a标签包裹
+        行内元素不能包裹块级元素，反之可以。a标签除外，a标签可以包裹div
+
+     -->
+     <p><div></div></p>
+
+      <!-- 
+        给div设置字体颜色，p元素有效，a标签无限，为啥？
+
+       -->
+     <div>
+         <p>我是p标签</p>
+         <a href="#">我是a标签</a>
+     </div>
+
+</body>
+</html>
