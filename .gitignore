@@ -2,6 +2,9 @@
 node_modules
 /dist
 .idea/
+node_modules
+npm-debug.log
+package-lock.json
 
 # local env files
 .env.local
