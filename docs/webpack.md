@@ -7,8 +7,8 @@
 
 * 运行命令  `webpack .\src\index.js -o .\dist\buid.js` 前面是指定入口，后面指定出口
 * 或者运行 `webpack` 其实就是默认命令简写 `webpack .\src\index.js -o .\dist\main.js`
-* 需要注意点：如果webpack配置不在更目录中，那么运行时需要指明配置在哪个位置。例如：
-  * 放在根目录build文件中 那么运行  **`... --config build/webpack.config ...`** 
+* **需要注意点**：如果webpack配置不在更目录中，那么运行时需要指明配置在哪个位置。例如：
+  * 放在根目录build文件中 那么运行  **`... --config webpack配置目录/webpack.config ...`** 
 
 ### 修复默认压缩地址
 
@@ -28,4 +28,6 @@
  
 
 ### webpack 配置多文件打包方式
+
+* **Js文件多文件处理**
 
