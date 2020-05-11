@@ -1,7 +1,7 @@
 // 多文件 [js,html] 打包配置
-const path = require('path');
-const glob = require('glob');
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');//s
+const glob = require('glob');//s
+const htmlWebpackPlugin = require('html-webpack-plugin')
 
 const DIST = path.join(__dirname, '../dist');
 const HTML_DIST = path.join(__dirname, '../html');
@@ -10,7 +10,8 @@ const dev_ = path.resolve(__dirname, '../src/js');
 //处理多文件js打包地址 和取名
 let entry = {}
 let files = glob.sync(dev_+'/*.js')
-files.forEach((item, index) => {
+files.forEach((item) => {
+    //
     let key = item.match(/js\/(\S*)\./)[1];
     entry[key] = item
 });
