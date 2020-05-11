@@ -110,3 +110,5 @@
   ```
 
 * 当页面达到一定数量也可以同理使用多文件js处理方案一样，使用glob工具，取值指定目录文件，返回文件绝对路径的数组
+
+* 更多详细配置介绍 [html-webpack-plugin插件配置](https://www.cnblogs.com/grimm/p/5770829.html)

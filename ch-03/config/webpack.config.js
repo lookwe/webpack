@@ -1,7 +1,7 @@
 // 多文件 [js,html] 打包配置
-const path = require('path')
-const glob = require('glob')
-const htmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const glob = require('glob');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 
 const DIST = path.join(__dirname, '../dist');
 const HTML_DIST = path.join(__dirname, '../html');
